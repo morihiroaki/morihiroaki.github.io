@@ -1,0 +1,47 @@
+body {
+  padding-top: 60px;
+}
+.starter-template {
+  padding: 40px 15px;
+}
+.pTitle {
+  font-size: 17.5px;
+  font-weight: bold;
+}
+.pAuthors {
+  font-size: 15px;
+  color: #999999;
+}
+.pAbstract {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+h2 {
+  overflow: hidden;
+  font-size: 25px;
+  margin: 5px 0;
+}
+.ucllogo {
+  height: 30pt;
+  vertical-align: bottom;
+  display: none;
+}
+.fields {
+  font-size: 15px;
+}
+.pic-me {
+  width: 140px;
+  vertical-align: middle;
+}
+.navbar-brand {
+  float: none;
+}
+@media (min-width: 600px) {
+  .col-md-4 {
+    float: left;
+    width: 33%;
+  }
+  .ucllogo {
+    display: inline;
+  }
+}
