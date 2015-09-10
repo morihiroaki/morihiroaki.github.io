@@ -103,4 +103,5 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 .pAbstract {
   padding-top: 5px;
   padding-bottom: 15px;
+  word-break: break-all;
 }
