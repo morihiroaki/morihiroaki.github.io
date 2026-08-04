@@ -267,7 +267,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .friendly-nav-links a { text-decoration: none; }
 .friendly-hero { min-height: 520px; display: grid; grid-template-columns: .8fr 1.5fr; gap: clamp(2rem, 7vw, 7rem); align-items: center; padding: 4rem; background: var(--f-surface); border-radius: 32px; }
 .friendly-photo { position: relative; display: grid; place-items: center; }
-.friendly-photo::before { content: ""; position: absolute; width: 115%; aspect-ratio: 1; border-radius: 42% 58% 55% 45%; background: var(--f-soft); transform: rotate(-7deg); }
+.friendly-photo::before { content: ""; position: absolute; width: 168px; aspect-ratio: 1; border-radius: 42% 58% 55% 45%; background: var(--f-soft); transform: rotate(-7deg); }
 .friendly-photo img { position: relative; width: min(260px, 80%); aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
 .friendly-kicker { margin: 0 0 .8rem; color: var(--f-accent); font-size: .72rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
 .friendly h1 { margin: 0 0 1rem; font: 400 clamp(3.4rem, 8vw, 7rem)/.9 var(--serif); letter-spacing: -.055em; }
