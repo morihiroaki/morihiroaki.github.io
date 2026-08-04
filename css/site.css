@@ -393,7 +393,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* Sage & Linen — content-rich selected direction */
 .content-enhanced .friendly-nav { border-bottom: 1px solid rgba(51,59,53,.15); }
 .content-enhanced .friendly-hero { min-height: 520px; grid-template-columns: .72fr 1.4fr; gap: clamp(2rem, 5vw, 4.5rem); }
-.content-enhanced .friendly-photo::before { width: 106%; }
+.content-enhanced .friendly-photo::before {
+  width: 225px;
+  height: 225px;
+  aspect-ratio: auto;
+  transform: rotate(3deg);
+}
 .content-enhanced .friendly-photo img { width: min(225px, 82%); }
 .content-enhanced h1 { font-size: clamp(2.8rem, 6vw, 5rem); line-height: .95; }
 .content-enhanced.ja h1 { font-size: clamp(2.7rem, 5.5vw, 4.4rem); letter-spacing: -.055em; }
