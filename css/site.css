@@ -399,7 +399,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   aspect-ratio: auto;
   transform: rotate(3deg);
 }
-.content-enhanced .friendly-photo img { width: min(225px, 82%); }
+.content-enhanced .friendly-photo img { width: min(205px, 72%); }
 .content-enhanced h1 { font-size: clamp(2.8rem, 6vw, 5rem); line-height: .95; }
 .content-enhanced.ja h1 { font-size: clamp(2.7rem, 5.5vw, 4.4rem); letter-spacing: -.055em; }
 .content-enhanced .friendly-intro { max-width: 680px; font-size: 1.08rem; }
