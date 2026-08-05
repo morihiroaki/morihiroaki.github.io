@@ -137,21 +137,12 @@
 }
 
 .related-links summary {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
+  display: block;
   width: fit-content;
-  padding: .24rem .56rem .24rem .45rem;
-  border: 1px solid #dde1e4;
-  border-radius: 5px;
-  background-color: #fafbfb;
-  color: #606a72;
+  color: #6c757d;
   cursor: pointer;
   font-size: .75rem;
-  font-weight: 500;
   list-style: none;
-  transition: background-color .15s ease, border-color .15s ease,
-    color .15s ease;
 }
 
 .related-links summary::-webkit-details-marker {
@@ -161,20 +152,12 @@
 .related-links summary::before {
   content: "+";
   display: inline-block;
-  width: 15px;
+  width: 17px;
   color: #8b9298;
-  font-size: .9rem;
-  line-height: 1;
 }
 
 .related-links[open] summary::before {
   content: "−";
-}
-
-.related-links summary:hover {
-  border-color: #bbc4ca;
-  background-color: #f1f4f5;
-  color: #3f4a52;
 }
 
 .related-links .publication-actions {
