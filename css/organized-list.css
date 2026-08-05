@@ -376,48 +376,48 @@ a.contact-detail-value:focus {
 }
 
 .english-publications .publication-actions {
-  flex-direction: column;
-  align-items: stretch;
-  gap: 5px;
+  align-items: center;
+  gap: 4px 11px;
   margin-top: auto;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .english-publications .publication-actions .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  min-height: 32px;
-  padding: .38rem .65rem;
-  border-color: #c8d4dc;
-  border-radius: 8px;
-  background-color: #f8fafb;
-  color: #405a6c;
-  font-size: .72rem;
-  line-height: 1.25;
+  gap: 4px;
+  width: auto;
+  min-height: 0;
+  padding: .08rem 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: #66727a;
+  font-size: .7rem;
+  font-weight: 400;
+  line-height: 1.35;
   text-align: left;
   white-space: normal;
-  transition: background-color .15s ease, border-color .15s ease,
-    box-shadow .15s ease, color .15s ease, transform .15s ease;
+  transition: color .15s ease;
 }
 
 .english-publications .publication-actions .btn::after {
   content: "↗";
   flex: 0 0 auto;
-  color: #8195a3;
-  font-size: .75rem;
+  color: #98a3aa;
+  font-size: .68rem;
   line-height: 1;
 }
 
 .english-publications .publication-actions .btn:hover,
 .english-publications .publication-actions .btn:focus {
-  border-color: #9fb2bf;
-  background-color: #eef3f6;
-  box-shadow: 0 3px 8px rgba(49, 76, 94, .09);
-  color: #2f4d61;
-  transform: translateY(-1px);
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+  color: #334f61;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: none;
 }
 
 .related-links {
