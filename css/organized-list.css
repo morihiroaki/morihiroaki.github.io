@@ -199,6 +199,7 @@
   text-underline-offset: 2px;
 }
 
+.publication-grid,
 .essay-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -206,6 +207,7 @@
   margin-top: 16px;
 }
 
+.publication-grid .publication-item,
 .essay-columns .essay-item {
   padding: 17px 18px 16px;
   border: 1px solid #e1e6e3;
@@ -216,6 +218,8 @@
     transform .18s ease;
 }
 
+.publication-grid .publication-item:hover,
+.publication-grid .publication-item:focus-within,
 .essay-columns .essay-item:hover,
 .essay-columns .essay-item:focus-within {
   border-color: #cbd5cf;
@@ -247,6 +251,7 @@
 }
 
 @media (max-width: 767.98px) {
+  .publication-grid,
   .essay-columns {
     grid-template-columns: 1fr;
   }
