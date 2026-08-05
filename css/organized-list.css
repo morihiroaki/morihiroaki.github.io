@@ -653,6 +653,18 @@ a.contact-detail-value:focus {
   font-size: .72rem;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .japanese-profile > .profile-portrait-column {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+
+  .japanese-profile > .col-sm-9 {
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+}
+
 @media (max-width: 991.98px) {
   .profile-contact-section .contact-panel {
     grid-template-columns: 1fr;
@@ -667,6 +679,12 @@ a.contact-detail-value:focus {
 }
 
 @media (max-width: 767.98px) {
+  .japanese-profile > .profile-portrait-column,
+  .japanese-profile > .col-sm-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .publication-grid,
   .essay-columns {
     grid-template-columns: 1fr;
