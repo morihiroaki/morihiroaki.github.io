@@ -180,26 +180,9 @@
 }
 
 .profile-contact-section .contact-panel {
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, auto);
+  gap: 22px;
   padding: 0;
-}
-
-.contact-kicker {
-  margin: 0 0 3px;
-  color: #84938a;
-  font-size: .6875rem;
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.contact-title {
-  margin: 0 0 7px;
-  color: #505a54;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  line-height: 1.5;
 }
 
 .contact-message {
@@ -230,6 +213,12 @@
   margin-top: 5px;
   color: #8a9390;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .profile-contact-section .contact-details p:last-child span {
+    white-space: nowrap;
+  }
 }
 
 .organized-list .content-section + .content-section {
@@ -471,6 +460,19 @@
 
 .popover {
   max-width: min(520px, calc(100vw - 30px));
+}
+
+@media (max-width: 991.98px) {
+  .profile-contact-section .contact-panel {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .profile-contact-section .contact-details {
+    padding: 14px 0 0;
+    border-top: 1px solid #dce4df;
+    border-left: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
