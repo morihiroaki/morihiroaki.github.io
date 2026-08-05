@@ -57,6 +57,18 @@
   outline-offset: 2px;
 }
 
+.profile-position {
+  margin-bottom: 9px;
+}
+
+.profile-intro {
+  max-width: 700px;
+  margin: 0 0 14px;
+  color: #5f6762;
+  font-size: .9rem;
+  line-height: 1.75;
+}
+
 .organized-list .content-section + .content-section {
   margin-top: 34px;
 }
