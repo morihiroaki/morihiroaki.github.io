@@ -69,6 +69,34 @@
   line-height: 1.75;
 }
 
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 14px 28px;
+  margin: 16px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #e1e6e3;
+  border-radius: 14px;
+  background-color: #fafbfa;
+  color: #606864;
+  font-size: .875rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.contact-panel p {
+  display: flex;
+  gap: 9px;
+  margin: 0;
+}
+
+.contact-panel i {
+  width: 15px;
+  margin-top: 5px;
+  color: #8a9390;
+  text-align: center;
+}
+
 .organized-list .content-section + .content-section {
   margin-top: 34px;
 }
@@ -312,6 +340,10 @@
 @media (max-width: 767.98px) {
   .publication-grid,
   .essay-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
     grid-template-columns: 1fr;
   }
 }
