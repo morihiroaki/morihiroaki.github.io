@@ -654,6 +654,16 @@ a.contact-detail-value:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .english-profile > .profile-portrait-column {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+
+  .english-profile > .col-sm-9 {
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+
   .japanese-profile > .profile-portrait-column {
     flex: 0 0 32%;
     max-width: 32%;
@@ -679,6 +689,12 @@ a.contact-detail-value:focus {
 }
 
 @media (max-width: 767.98px) {
+  .english-profile > .profile-portrait-column,
+  .english-profile > .col-sm-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .japanese-profile > .profile-portrait-column,
   .japanese-profile > .col-sm-9 {
     flex: 0 0 100%;
