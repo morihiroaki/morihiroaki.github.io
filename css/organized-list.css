@@ -199,6 +199,10 @@
   text-underline-offset: 2px;
 }
 
+.popover {
+  max-width: min(520px, calc(100vw - 30px));
+}
+
 @media (max-width: 575.98px) {
   .publication-item {
     padding-top: 18px;
