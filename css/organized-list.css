@@ -192,6 +192,16 @@
   padding: 0;
 }
 
+.english-profile .profile-contact-section .contact-panel {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.english-profile .profile-contact-section .contact-details {
+  padding: 0;
+  border: 0;
+}
+
 .contact-message {
   max-width: 590px;
   margin: 0;
