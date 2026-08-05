@@ -87,6 +87,15 @@
   white-space: nowrap;
 }
 
+.japanese-profile .profile-resource-links {
+  flex-wrap: nowrap;
+  max-width: none;
+}
+
+.japanese-profile .profile-resource-links .btn {
+  white-space: nowrap;
+}
+
 /* Quiet, consistent controls that sit comfortably with the original design. */
 .row.flex > .col-sm-9 > p > .btn,
 .profile-resource-links .btn {
