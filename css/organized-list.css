@@ -563,6 +563,29 @@ a.contact-detail-value:focus {
   max-width: min(520px, calc(100vw - 30px));
 }
 
+.japanese-site-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 50px 0 10px;
+  padding: 18px 2px 0;
+  border-top: 1px solid #e1e6e3;
+  color: #747d78;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.japanese-site-footer .footer-name {
+  color: #4f5953;
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+
+.japanese-site-footer .footer-affiliation {
+  font-size: .72rem;
+}
+
 @media (max-width: 991.98px) {
   .profile-contact-section .contact-panel {
     grid-template-columns: 1fr;
@@ -611,5 +634,12 @@ a.contact-detail-value:focus {
 
   .publication-title {
     font-size: 1rem;
+  }
+
+  .japanese-site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    margin-top: 40px;
   }
 }
