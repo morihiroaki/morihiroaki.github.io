@@ -75,10 +75,10 @@
   gap: 32px;
   margin: 0;
   padding: 26px 28px;
-  border: 1px solid #dfe6e1;
+  border: 0;
   border-radius: 18px;
-  background: linear-gradient(135deg, #f8faf9 0%, #f2f6f3 100%);
-  box-shadow: 0 4px 16px rgba(45, 56, 49, .035);
+  background: #fff;
+  box-shadow: none;
   color: #606864;
   font-size: .875rem;
   line-height: 1.6;
