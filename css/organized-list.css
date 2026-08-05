@@ -1,0 +1,106 @@
+/* Organized publication lists for the Japanese page.
+   The surrounding profile keeps the original Bootstrap design. */
+
+.organized-list .content-section + .content-section {
+  margin-top: 34px;
+}
+
+.organized-list .page-header {
+  padding-bottom: 7px;
+}
+
+.organized-list .page-header h5 {
+  margin-bottom: 0;
+}
+
+.publication-list {
+  padding-top: 1px;
+}
+
+.publication-item {
+  padding: 20px 0 8px;
+}
+
+.publication-title {
+  margin: 0 0 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.publication-title a {
+  color: #000;
+}
+
+.publication-title a:hover,
+.publication-title a:focus {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.publication-meta {
+  margin: 0;
+  color: #495057;
+  font-size: .8125rem;
+  line-height: 1.55;
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.publication-actions .btn {
+  margin: 0;
+  font-size: .75rem;
+}
+
+.related-links {
+  margin-top: 6px;
+}
+
+.related-links summary {
+  display: block;
+  width: fit-content;
+  color: #6c757d;
+  cursor: pointer;
+  font-size: .75rem;
+  list-style: none;
+}
+
+.related-links summary::-webkit-details-marker {
+  display: none;
+}
+
+.related-links summary::before {
+  content: "+";
+  display: inline-block;
+  width: 17px;
+  color: #8b9298;
+}
+
+.related-links[open] summary::before {
+  content: "−";
+}
+
+.related-links .publication-actions {
+  margin: 6px 0 1px 17px;
+}
+
+.reference-link {
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .publication-item {
+    padding-top: 18px;
+  }
+
+  .publication-title {
+    font-size: 1rem;
+  }
+}
