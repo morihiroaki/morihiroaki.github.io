@@ -192,6 +192,10 @@
   line-height: 1.75;
 }
 
+.contact-message-line {
+  display: block;
+}
+
 .contact-details {
   display: grid;
   align-content: start;
@@ -238,6 +242,10 @@ a.contact-detail-value:focus {
 }
 
 @media (min-width: 768px) {
+  .contact-message-line {
+    white-space: nowrap;
+  }
+
   .profile-contact-section .contact-detail-address .contact-detail-value {
     white-space: nowrap;
   }
