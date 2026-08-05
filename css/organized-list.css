@@ -1,6 +1,33 @@
 /* Organized publication lists for the Japanese page.
    The surrounding profile keeps the original Bootstrap design. */
 
+.profile-portrait-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-portrait-shell {
+  display: grid;
+  place-items: center;
+  width: 168px;
+  height: 168px;
+  padding: 7px;
+  border: 1px solid #dbe3e7;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 9px 25px rgba(45, 56, 61, .10);
+}
+
+.profile-portrait-photo {
+  display: block;
+  width: 152px;
+  height: 152px;
+  max-width: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* Quiet, consistent controls that sit comfortably with the original design. */
 .row.flex > .col-sm-9 > p > .btn {
   display: inline-flex;
@@ -391,6 +418,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .profile-portrait-column {
+    padding-top: 26px;
+  }
+
   .publication-item {
     padding-top: 18px;
   }
