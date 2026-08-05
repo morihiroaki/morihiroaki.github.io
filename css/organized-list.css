@@ -1,6 +1,62 @@
 /* Organized publication lists for the Japanese page.
    The surrounding profile keeps the original Bootstrap design. */
 
+/* Quiet, consistent controls that sit comfortably with the original design. */
+.row.flex > .col-sm-9 > p > .btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  margin: 0 4px 6px 0;
+  padding: .34rem .72rem;
+  border-width: 1px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(32, 43, 54, .06);
+  font-size: .78rem;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: background-color .15s ease, border-color .15s ease,
+    box-shadow .15s ease, color .15s ease, transform .15s ease;
+}
+
+.row.flex > .col-sm-9 > p > .btn-outline-primary {
+  border-color: #a9bfd2;
+  color: #315f8f;
+}
+
+.row.flex > .col-sm-9 > p > .btn-outline-primary:hover,
+.row.flex > .col-sm-9 > p > .btn-outline-primary:focus {
+  border-color: #7f9fbd;
+  background-color: #edf3f8;
+  color: #234d74;
+}
+
+.row.flex > .col-sm-9 > p > .btn-outline-success {
+  border-color: #aec4b4;
+  color: #4d7458;
+}
+
+.row.flex > .col-sm-9 > p > .btn-outline-success:hover,
+.row.flex > .col-sm-9 > p > .btn-outline-success:focus {
+  border-color: #86a48e;
+  background-color: #eef4f0;
+  color: #365c42;
+}
+
+.row.flex > .col-sm-9 > p > .btn:hover {
+  box-shadow: 0 3px 7px rgba(32, 43, 54, .10);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.row.flex > .col-sm-9 > p > .btn:focus-visible,
+.publication-actions .btn:focus-visible,
+.related-links summary:focus-visible,
+.reference-link:focus-visible {
+  outline: 3px solid rgba(49, 95, 143, .18);
+  outline-offset: 2px;
+}
+
 .organized-list .content-section + .content-section {
   margin-top: 34px;
 }
@@ -55,7 +111,25 @@
 
 .publication-actions .btn {
   margin: 0;
+  min-height: 28px;
+  padding: .25rem .58rem;
+  border-color: #d3d9de;
+  border-radius: 5px;
+  background-color: #fafbfb;
+  color: #53616d;
   font-size: .75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background-color .15s ease, border-color .15s ease,
+    color .15s ease;
+}
+
+.publication-actions .btn:hover,
+.publication-actions .btn:focus {
+  border-color: #aeb9c2;
+  background-color: #eef2f4;
+  color: #303b44;
+  text-decoration: none;
 }
 
 .related-links {
@@ -63,12 +137,21 @@
 }
 
 .related-links summary {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
   width: fit-content;
-  color: #6c757d;
+  padding: .24rem .56rem .24rem .45rem;
+  border: 1px solid #dde1e4;
+  border-radius: 5px;
+  background-color: #fafbfb;
+  color: #606a72;
   cursor: pointer;
   font-size: .75rem;
+  font-weight: 500;
   list-style: none;
+  transition: background-color .15s ease, border-color .15s ease,
+    color .15s ease;
 }
 
 .related-links summary::-webkit-details-marker {
@@ -78,12 +161,20 @@
 .related-links summary::before {
   content: "+";
   display: inline-block;
-  width: 17px;
+  width: 15px;
   color: #8b9298;
+  font-size: .9rem;
+  line-height: 1;
 }
 
 .related-links[open] summary::before {
   content: "−";
+}
+
+.related-links summary:hover {
+  border-color: #bbc4ca;
+  background-color: #f1f4f5;
+  color: #3f4a52;
 }
 
 .related-links .publication-actions {
@@ -91,8 +182,27 @@
 }
 
 .reference-link {
-  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  margin-left: 5px;
+  padding: .12rem .4rem;
+  border: 1px solid #d9dfe3;
+  border-radius: 4px;
+  background-color: #fafbfb;
+  color: #5d6a74;
+  font-size: .72rem;
+  font-weight: 500;
+  line-height: 1.2;
   white-space: nowrap;
+}
+
+.reference-link:hover,
+.reference-link:focus {
+  border-color: #b7c1c8;
+  background-color: #eef2f4;
+  color: #35424c;
+  text-decoration: none;
 }
 
 @media (max-width: 575.98px) {
