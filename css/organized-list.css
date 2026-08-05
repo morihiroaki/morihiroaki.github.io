@@ -543,6 +543,10 @@ a.contact-detail-value:focus {
   box-shadow: 0 4px 16px rgba(61, 80, 91, .035);
 }
 
+.english-publications .publication-grid .publication-item {
+  background-color: #fff;
+}
+
 .research-section .publication-grid .publication-item:hover,
 .research-section .publication-grid .publication-item:focus-within {
   border-color: #c5d4dc;
