@@ -206,7 +206,31 @@
 }
 
 .essay-column {
-  min-width: 0;
+  display: contents;
+}
+
+.essay-column:nth-child(1) .essay-item {
+  grid-column: 1;
+}
+
+.essay-column:nth-child(2) .essay-item {
+  grid-column: 2;
+}
+
+.essay-column:nth-child(3) .essay-item {
+  grid-column: 3;
+}
+
+.essay-column .essay-item:nth-child(1) {
+  grid-row: 1;
+}
+
+.essay-column .essay-item:nth-child(2) {
+  grid-row: 2;
+}
+
+.essay-column .essay-item:nth-child(3) {
+  grid-row: 3;
 }
 
 .essay-columns .essay-item {
@@ -244,6 +268,15 @@
 @media (max-width: 767.98px) {
   .essay-columns {
     grid-template-columns: 1fr;
+  }
+
+  .essay-column {
+    display: block;
+  }
+
+  .essay-column .essay-item {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .essay-column + .essay-column .essay-item:first-child {
