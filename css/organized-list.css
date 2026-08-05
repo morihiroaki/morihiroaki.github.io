@@ -566,14 +566,15 @@ a.contact-detail-value:focus {
 .japanese-site-footer {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: center;
+  gap: 14px;
   margin: 50px 0 10px;
   padding: 18px 2px 0;
   border-top: 1px solid #e1e6e3;
   color: #747d78;
   font-size: .75rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .japanese-site-footer .footer-name {
@@ -638,7 +639,7 @@ a.contact-detail-value:focus {
 
   .japanese-site-footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 3px;
     margin-top: 40px;
   }
