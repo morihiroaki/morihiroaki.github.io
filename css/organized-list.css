@@ -349,6 +349,29 @@ a.contact-detail-value:focus {
   line-height: 1.55;
 }
 
+#日本語論文・研究紹介 .publication-type-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 21px;
+  margin: 0 0 7px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: .65625rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1;
+}
+
+#日本語論文・研究紹介 .publication-type-research {
+  background-color: #e7eef2;
+  color: #607c8d;
+}
+
+#日本語論文・研究紹介 .publication-type-paper {
+  background-color: #e8eee9;
+  color: #627668;
+}
+
 .english-publication-meta {
   display: grid;
   gap: 3px;
