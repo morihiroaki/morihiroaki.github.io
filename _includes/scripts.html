@@ -5,6 +5,36 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <script>
 $(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
+  var $referencePopovers = $('[data-toggle="popover"]');
+
+  $referencePopovers
+    .attr('aria-expanded', 'false')
+    .popover({
+      trigger: 'click',
+      container: 'body',
+      placement: 'auto',
+      boundary: 'viewport'
+    })
+    .on('show.bs.popover', function(){
+      $referencePopovers.not(this).popover('hide');
+    })
+    .on('shown.bs.popover', function(){
+      $(this).attr('aria-expanded', 'true');
+    })
+    .on('hidden.bs.popover', function(){
+      $(this).attr('aria-expanded', 'false');
+    });
+
+  $(document).on('click', function(event){
+    if (!$(event.target).closest('[data-toggle="popover"], .popover').length) {
+      $referencePopovers.popover('hide');
+    }
+  });
+
+  $(document).on('keydown', function(event){
+    if (event.key === 'Escape') {
+      $referencePopovers.popover('hide');
+    }
+  });
 });
 </script>
