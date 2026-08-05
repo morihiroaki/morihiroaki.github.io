@@ -111,6 +111,17 @@
   line-height: 1.6;
 }
 
+.profile-contact-section {
+  max-width: 700px;
+  margin: 0 0 17px;
+}
+
+.profile-contact-section .contact-panel {
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: 24px;
+  padding: 0;
+}
+
 .contact-kicker {
   margin: 0 0 3px;
   color: #84938a;
@@ -408,6 +419,11 @@
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 22px 20px;
+  }
+
+  .profile-contact-section .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .contact-details {
