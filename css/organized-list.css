@@ -145,6 +145,12 @@
   list-style: none;
 }
 
+.publication-actions.d-inline-flex + .related-links summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+}
+
 .related-links summary::-webkit-details-marker {
   display: none;
 }
