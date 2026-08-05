@@ -3,6 +3,7 @@
 
 .profile-portrait-column {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -28,8 +29,18 @@
   object-fit: cover;
 }
 
+.profile-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 230px;
+  margin-top: 14px;
+}
+
 /* Quiet, consistent controls that sit comfortably with the original design. */
-.row.flex > .col-sm-9 > p > .btn {
+.row.flex > .col-sm-9 > p > .btn,
+.profile-resource-links .btn {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
@@ -46,42 +57,54 @@
     box-shadow .15s ease, color .15s ease, transform .15s ease;
 }
 
-.row.flex > .col-sm-9 > p > .btn-outline-primary {
+.row.flex > .col-sm-9 > p > .btn-outline-primary,
+.profile-resource-links .btn-outline-primary {
   border-color: #a9bfd2;
   color: #315f8f;
 }
 
 .row.flex > .col-sm-9 > p > .btn-outline-primary:hover,
-.row.flex > .col-sm-9 > p > .btn-outline-primary:focus {
+.row.flex > .col-sm-9 > p > .btn-outline-primary:focus,
+.profile-resource-links .btn-outline-primary:hover,
+.profile-resource-links .btn-outline-primary:focus {
   border-color: #7f9fbd;
   background-color: #edf3f8;
   color: #234d74;
 }
 
-.row.flex > .col-sm-9 > p > .btn-outline-success {
+.row.flex > .col-sm-9 > p > .btn-outline-success,
+.profile-resource-links .btn-outline-success {
   border-color: #aec4b4;
   color: #4d7458;
 }
 
 .row.flex > .col-sm-9 > p > .btn-outline-success:hover,
-.row.flex > .col-sm-9 > p > .btn-outline-success:focus {
+.row.flex > .col-sm-9 > p > .btn-outline-success:focus,
+.profile-resource-links .btn-outline-success:hover,
+.profile-resource-links .btn-outline-success:focus {
   border-color: #86a48e;
   background-color: #eef4f0;
   color: #365c42;
 }
 
-.row.flex > .col-sm-9 > p > .btn:hover {
+.row.flex > .col-sm-9 > p > .btn:hover,
+.profile-resource-links .btn:hover {
   box-shadow: 0 3px 7px rgba(32, 43, 54, .10);
   text-decoration: none;
   transform: translateY(-1px);
 }
 
 .row.flex > .col-sm-9 > p > .btn:focus-visible,
+.profile-resource-links .btn:focus-visible,
 .publication-actions .btn:focus-visible,
 .related-links summary:focus-visible,
 .reference-link:focus-visible {
   outline: 3px solid rgba(49, 95, 143, .18);
   outline-offset: 2px;
+}
+
+.profile-resource-links .btn {
+  margin: 0;
 }
 
 .profile-position {
@@ -317,6 +340,7 @@
   font-weight: 400;
   line-height: inherit;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .reference-link::before {
