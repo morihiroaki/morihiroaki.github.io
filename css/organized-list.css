@@ -340,6 +340,27 @@ a.contact-detail-value:focus {
   line-height: 1.55;
 }
 
+.english-publication-meta {
+  display: grid;
+  gap: 3px;
+  margin-top: 4px;
+}
+
+.english-publication-meta .publication-venue {
+  color: #505b62;
+  line-height: 1.45;
+}
+
+.english-publication-meta .publication-venue strong {
+  font-weight: 600;
+}
+
+.english-publication-meta .publication-coauthors {
+  color: #737c81;
+  font-size: .76rem;
+  line-height: 1.5;
+}
+
 .publication-actions {
   display: flex;
   flex-wrap: wrap;
